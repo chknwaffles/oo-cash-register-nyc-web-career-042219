@@ -5,12 +5,16 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    @prices = []
   end
   
   def add_item(title, price, quantity=1)
     self.total += (price * quantity)
     #binding.pry
-    quantity.times {|i| self.items << title}
+    quantity.times do |i| 
+      self.items << title
+      self.prices << 
+    end
     #self.items << title
   end
   
