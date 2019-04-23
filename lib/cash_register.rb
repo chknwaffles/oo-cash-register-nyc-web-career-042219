@@ -13,7 +13,7 @@ class CashRegister
     #binding.pry
     quantity.times do |i| 
       self.items << title
-      self.prices << 
+      self.prices << price
     end
     #self.items << title
   end
