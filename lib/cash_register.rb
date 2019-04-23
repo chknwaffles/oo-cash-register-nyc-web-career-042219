@@ -10,7 +10,7 @@ class CashRegister
   def add_item(title, price, quantity=1)
     self.total += (price * quantity)
     binding.pry
-    quantity.times {|
+    quantity.times {|i| self.items << title}
     self.items.times << title
   end
   
